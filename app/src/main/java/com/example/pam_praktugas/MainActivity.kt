@@ -68,4 +68,17 @@ fun TugasLayoutApp() {
             colorResource(id = R.color.card_green)
         )
     )
+
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = colorResource(id = R.color.white)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+        }
+    }
 }
