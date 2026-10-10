@@ -39,3 +39,33 @@ data class Mahasiswa(
     val alamatResId: Int,
     val warnaBackground: Color
 )
+
+@Composable
+fun TugasLayoutApp() {
+    val listMahasiswa = listOf(
+        Mahasiswa(
+            R.string.nama_1,
+            R.string.telp_1,
+            R.string.alamat_1,
+            colorResource(id = R.color.card_grey)
+        ),
+        Mahasiswa(
+            R.string.nama_2,
+            R.string.telp_2,
+            R.string.alamat_2,
+            colorResource(id = R.color.card_purple)
+        ),
+        Mahasiswa(
+            R.string.nama_3,
+            R.string.telp_3,
+            R.string.alamat_3,
+            colorResource(id = R.color.card_blue)
+        ),
+        Mahasiswa(
+            R.string.nama_4,
+            R.string.telp_4,
+            R.string.alamat_4,
+            colorResource(id = R.color.card_green)
+        )
+    )
+}
