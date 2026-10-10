@@ -151,3 +151,11 @@ fun StudentCard(mahasiswa: Mahasiswa) {
         }
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewTugas() {
+    PAM_PrakTugasTheme {
+        TugasLayoutApp()
+    }
+}
