@@ -114,6 +114,34 @@ fun StudentCard(mahasiswa: Mahasiswa) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
+
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = "Logo Kiri",
+                modifier = Modifier.size(56.dp)
+            )
+
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    text = stringResource(id = mahasiswa.namaResId),
+                    color = Color.White,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = stringResource(id = mahasiswa.telpResId),
+                    color = colorResource(id = R.color.text_cyan),
+                    fontSize = 12.sp
+                )
+                Text(
+                    text = stringResource(id = mahasiswa.alamatResId),
+                    color = colorResource(id = R.color.text_yellow),
+                    fontSize = 12.sp
+                )
+            }
         }
     }
 }
