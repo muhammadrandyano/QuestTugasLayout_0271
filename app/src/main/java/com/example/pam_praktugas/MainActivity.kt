@@ -79,6 +79,16 @@ fun TugasLayoutApp() {
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Spacer(modifier = Modifier.height(32.dp))
+
+            HeaderSection()
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            listMahasiswa.forEach { mahasiswa ->
+                StudentCard(mahasiswa = mahasiswa)
+                Spacer(modifier = Modifier.height(12.dp))
+            }
         }
     }
 }
