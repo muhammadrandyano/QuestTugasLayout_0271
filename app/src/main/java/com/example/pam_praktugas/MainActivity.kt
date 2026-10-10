@@ -99,3 +99,21 @@ fun HeaderSection() {
         )
     }
 }
+
+@Composable
+fun StudentCard(mahasiswa: Mahasiswa) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = mahasiswa.warnaBackground)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+        }
+    }
+}
