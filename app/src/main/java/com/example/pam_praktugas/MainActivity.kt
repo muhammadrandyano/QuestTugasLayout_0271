@@ -142,6 +142,12 @@ fun StudentCard(mahasiswa: Mahasiswa) {
                     fontSize = 12.sp
                 )
             }
+
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = "Logo Kanan",
+                modifier = Modifier.size(56.dp)
+            )
         }
     }
 }
