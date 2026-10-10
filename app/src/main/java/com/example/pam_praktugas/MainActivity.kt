@@ -32,3 +32,10 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+data class Mahasiswa(
+    val namaResId: Int,
+    val telpResId: Int,
+    val alamatResId: Int,
+    val warnaBackground: Color
+)
